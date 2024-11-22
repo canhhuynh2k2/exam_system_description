@@ -24,7 +24,7 @@
 --------------------------
 ## 2) Công nghệ sử dụng
 - Frontend: ReactJS/NextJS, Material UI
-- Backend: Spring Boot, Spring Cloud, Spring Data, Spring Security, Service discovery, Restful API, gRPC
+- Backend: Spring Boot, Spring Cloud, Spring Data, Spring Security, Service discovery, Restful API, gRPC, API Gateway, Eureka server, MinIO
 - Message Queue: RabbitMQ
 - Database: Postgresql, MongoDB, Redis
 - Deploy: Docker
@@ -32,5 +32,15 @@
 ## 3) Kiến trúc tổng quan
 ![image](https://github.com/user-attachments/assets/9572455a-0702-4ade-893c-c522cea791be)
 
-## 4) Thành phần hệ thống
+## 4) Mã nguồn và cài đặt
 --------------------------
+Github: 
+- Frontend: https://github.com/canhhuynh2k2/exam-system-frontend
+- Backend: https://github.com/canhhuynh2k2/exam-system-backend
+
+Setup frontend với docker:
+  docker build -t exam-system-frontend .
+  docker run -p 3000:3000 --env-file .env exam-system-frontend
+Setup backend với docker:
+  Bắt đầu các service với câu lệnh: docker-compose up --build
+Continue...
