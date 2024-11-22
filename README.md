@@ -39,9 +39,11 @@ Github:
 - Backend: https://github.com/canhhuynh2k2/exam-system-backend
 
 Setup frontend với docker:
-  - docker build -t exam-system-frontend .
-  - docker run -p 3000:3000 --env-file .env exam-system-frontend
+--------------------------
+    docker build -t exam-system-frontend .
+    docker run -p 3000:3000 --env-file .env exam-system-frontend
 Setup backend với docker:
-  - Bắt đầu các service với câu lệnh: docker-compose up --build
+--------------------------
+    docker-compose up --build
 --------------------------
     Continue...
